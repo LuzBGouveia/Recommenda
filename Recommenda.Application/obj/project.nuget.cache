@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "V8WXUB6TvxU=",
+  "success": true,
+  "projectFilePath": "/Users/thiagokeller/Dev/2026/TDSPG/Recommenda/Recommenda.Application/Recommenda.Application.csproj",
+  "expectedPackageFiles": [
+    "/Users/thiagokeller/.nuget/packages/bcrypt.net-next/4.1.0/bcrypt.net-next.4.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

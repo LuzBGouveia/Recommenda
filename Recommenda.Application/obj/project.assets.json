@@ -1,0 +1,159 @@
+{
+  "version": 3,
+  "targets": {
+    "net10.0": {
+      "BCrypt.Net-Next/4.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Recommenda.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BCrypt.Net-Next": "4.1.0"
+        },
+        "compile": {
+          "bin/placeholder/Recommenda.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Recommenda.Domain.dll": {}
+        }
+      },
+      "Recommenda.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Recommenda.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Recommenda.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BCrypt.Net-Next/4.1.0": {
+      "sha512": "5YT3DKllmtkyW68PjURu/V1TOe4MKiByKwsRNVcfYE1S5KuFTeozdmKzyNzolKiQF391OXCaQtINvYT3j1ERzQ==",
+      "type": "package",
+      "path": "bcrypt.net-next/4.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bcrypt.net-next.4.1.0.nupkg.sha512",
+        "bcrypt.net-next.nuspec",
+        "ico.png",
+        "lib/net10.0/BCrypt.Net-Next.dll",
+        "lib/net10.0/BCrypt.Net-Next.xml",
+        "lib/net20/BCrypt.Net-Next.dll",
+        "lib/net20/BCrypt.Net-Next.xml",
+        "lib/net35/BCrypt.Net-Next.dll",
+        "lib/net35/BCrypt.Net-Next.xml",
+        "lib/net462/BCrypt.Net-Next.dll",
+        "lib/net462/BCrypt.Net-Next.xml",
+        "lib/net472/BCrypt.Net-Next.dll",
+        "lib/net472/BCrypt.Net-Next.xml",
+        "lib/net48/BCrypt.Net-Next.dll",
+        "lib/net48/BCrypt.Net-Next.xml",
+        "lib/netstandard2.0/BCrypt.Net-Next.dll",
+        "lib/netstandard2.0/BCrypt.Net-Next.xml",
+        "lib/netstandard2.1/BCrypt.Net-Next.dll",
+        "lib/netstandard2.1/BCrypt.Net-Next.xml",
+        "readme.md"
+      ]
+    },
+    "Recommenda.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Recommenda.Domain/Recommenda.Domain.csproj",
+      "msbuildProject": "../Recommenda.Domain/Recommenda.Domain.csproj"
+    },
+    "Recommenda.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Recommenda.Infrastructure/Recommenda.Infrastructure.csproj",
+      "msbuildProject": "../Recommenda.Infrastructure/Recommenda.Infrastructure.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net10.0": [
+      "Recommenda.Domain >= 1.0.0",
+      "Recommenda.Infrastructure >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/thiagokeller/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/thiagokeller/Dev/2026/TDSPG/Recommenda/Recommenda.Application/Recommenda.Application.csproj",
+      "projectName": "Recommenda.Application",
+      "projectPath": "/Users/thiagokeller/Dev/2026/TDSPG/Recommenda/Recommenda.Application/Recommenda.Application.csproj",
+      "packagesPath": "/Users/thiagokeller/.nuget/packages/",
+      "outputPath": "/Users/thiagokeller/Dev/2026/TDSPG/Recommenda/Recommenda.Application/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/thiagokeller/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net10.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net10.0": {
+          "targetAlias": "net10.0",
+          "projectReferences": {
+            "/Users/thiagokeller/Dev/2026/TDSPG/Recommenda/Recommenda.Domain/Recommenda.Domain.csproj": {
+              "projectPath": "/Users/thiagokeller/Dev/2026/TDSPG/Recommenda/Recommenda.Domain/Recommenda.Domain.csproj"
+            },
+            "/Users/thiagokeller/Dev/2026/TDSPG/Recommenda/Recommenda.Infrastructure/Recommenda.Infrastructure.csproj": {
+              "projectPath": "/Users/thiagokeller/Dev/2026/TDSPG/Recommenda/Recommenda.Infrastructure/Recommenda.Infrastructure.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "10.0.100"
+    },
+    "frameworks": {
+      "net10.0": {
+        "targetAlias": "net10.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/Users/thiagokeller/.dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
