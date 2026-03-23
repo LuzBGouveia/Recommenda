@@ -11,6 +11,12 @@ public class User : BaseEntity
     public string Password { get; private set; }
     private string Salt { get; set; }
 
+    //1..N
+    public List<Rating> Ratings { get; private set; }
+
+    //1..1
+    public UserConfiguration Configuration { get; set; }
+
     public User(string name, string email, DateOnly dateBorn, string rawPassword)
     {
         UpdateName(name);

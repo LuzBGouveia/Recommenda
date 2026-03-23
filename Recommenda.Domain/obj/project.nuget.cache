@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "YlDT4FvzIGQ=",
+  "dgSpecHash": "fsQ/REh6qaQ=",
   "success": true,
-  "projectFilePath": "/Users/thiagokeller/Dev/2026/TDSPG/Recommenda/Recommenda.Domain/Recommenda.Domain.csproj",
+  "projectFilePath": "/home/lulz_user/RiderProjects/FIAP/TDSPG2/Recommenda/Recommenda.Domain/Recommenda.Domain.csproj",
   "expectedPackageFiles": [
-    "/Users/thiagokeller/.nuget/packages/bcrypt.net-next/4.1.0/bcrypt.net-next.4.1.0.nupkg.sha512"
+    "/home/lulz_user/.nuget/packages/bcrypt.net-next/4.1.0/bcrypt.net-next.4.1.0.nupkg.sha512"
   ],
   "logs": []
 }

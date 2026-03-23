@@ -11,9 +11,12 @@ public abstract class Content : BaseEntity
     
     public DateTime LaunchDate { get; private set; }
 
-    public ContentTypeEnum? ContentType { get; private set; }
+    //N..N - Relacionamento
+    public List<Genre> Genres { get; private set; }
+
+    public List<Rating> Ratings { get; set; }
     
-    protected Content(string name, string description, DateTime launchDate,  ContentTypeEnum contentType = ContentTypeEnum.Outros)
+    protected Content(string name, string description, DateTime launchDate,  List<Genre> genres)
     {
         Name = name;
 
@@ -26,7 +29,7 @@ public abstract class Content : BaseEntity
         LaunchDate = launchDate;
         
         Active = false;
-
-        ContentType = contentType;
+        
+        Genres = genres;
     }
 }

@@ -6,7 +6,7 @@ public class Serie : Content
 
     public int EpisodeCount { get; private set; }
     
-    public Serie(string name, string description, DateTime launchDate, int seasonCount, int episodeCount) : base(name, description, launchDate)
+    public Serie(string name, string description, DateTime launchDate, int seasonCount, int episodeCount, List<Genre> genres) : base(name, description, launchDate, genres )
     {
         Validate(seasonCount, episodeCount);
         
