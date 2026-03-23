@@ -1,4 +1,6 @@
+using Microsoft.EntityFrameworkCore;
 using Recommenda.Application.Services;
+using Recommenda.Infrastructure.Persistence;
 
 
 namespace Recommenda.API;
@@ -10,6 +12,12 @@ public class Program
         var builder = WebApplication.CreateBuilder(args);
 
         // Add services to the container.
+
+        builder.Services.AddDbContext<RecommendaContext>(options =>
+        {
+            // options.UseMySql(builder.Configuration.GetConnectionString("RecommendaMySQL"));
+            options.UseOracle(builder.Configuration.GetConnectionString("RecommendaOracle"));
+        });
 
         builder.Services.AddScoped<IMovieService, MovieService>();
 
